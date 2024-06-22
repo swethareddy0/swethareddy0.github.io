@@ -1,12 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("Page loaded successfully!");
 
-// Custom JavaScript code for sticky navigation
-
-$(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 50) {
-            $('header').addClass('navbar-scrolled');
-        } else {
-            $('header').removeClass('navbar-scrolled');
-        }
+    // Add smooth scrolling to all links in navbar
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
