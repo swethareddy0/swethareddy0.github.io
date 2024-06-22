@@ -6,16 +6,21 @@
     <title>Swetha Reddy Vuppal's Resume</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header class="text-center my-4">
-            <h1>Swetha Reddy Vuppal</h1>
+            <h1 class="display-4">Swetha Reddy Vuppal</h1>
             <p class="lead">Software Quality Assurance Engineer</p>
-            <p>Cincinnati, Ohio | +1 (513) 764-5700 | swethareddyv48@gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a> | <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a></p>
+            <p>Cincinnati, Ohio | <a href="tel:+15137645700">+1 (513) 764-5700</a> | <a href="mailto:swethareddyv48@gmail.com">swethareddyv48@gmail.com</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourgithubprofile" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </p>
         </header>
 
         <section id="summary">
@@ -27,30 +32,39 @@
             <h2 class="mb-4">Education</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h3>University of Cincinnati</h3>
-                    <p>Master of Science in Information Technology (GPA: 4.0/4.0)<br>Jan 2023 - Apr 2024</p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">University of Cincinnati</h3>
+                            <p class="card-text">Master of Science in Information Technology (GPA: 4.0/4.0)<br>Jan 2023 - Apr 2024</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Vasavi College of Engineering</h3>
-                    <p>Bachelor of Engineering in Information Technology (GPA: 3.58/4.0)<br>Jul 2018 - Jun 2022</p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Vasavi College of Engineering</h3>
+                            <p class="card-text">Bachelor of Engineering in Information Technology (GPA: 3.58/4.0)<br>Jul 2018 - Jun 2022</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="technical-skills">
             <h2 class="mb-4">Technical Skills</h2>
-            <ul>
-                <li><strong>Methodologies:</strong> Agile/Scrum, Waterfall</li>
-                <li><strong>Languages:</strong> Python, Java, C, C++, C#, HTML5, CSS3, JavaScript, TypeScript</li>
-                <li><strong>Frameworks & Libraries:</strong> Spring Boot, Django, Ruby, Angular, React.js, Node.js, Express.js, .NET, Rest API’s</li>
-                <li><strong>Databases & Servers:</strong> SQL, Oracle, SQL Server, MS-Access, MongoDB, PostgreSQL, Apache Hadoop, Apache Tomcat</li>
-                <li><strong>Tools & Platforms:</strong> Eclipse IDE, Android Studio, Docker, Tableau, CI/CD, DevOps, Jenkins, Ansible, Kubernetes</li>
-                <li><strong>Cloud, OS & Others:</strong> AWS, Azure, Windows, Mac OS, Linux, Git, GitHub, GitLab</li>
+            <ul class="list-group mb-4">
+                <li class="list-group-item">Methodologies: Agile/Scrum, Waterfall</li>
+                <li class="list-group-item">Languages: Python, Java, C, C++, C#, HTML5, CSS3, JavaScript, TypeScript</li>
+                <li class="list-group-item">Frameworks & Libraries: Spring Boot, Django, Ruby, Angular, React.js, Node.js, Express.js, .NET, Rest API’s</li>
+                <li class="list-group-item">Databases & Servers: SQL, Oracle, SQL Server, MS-Access, MongoDB, PostgreSQL, Apache Hadoop, Apache Tomcat</li>
+                <li class="list-group-item">Tools & Platforms: Eclipse IDE, Android Studio, Docker, Tableau, CI/CD, DevOps, Jenkins, Ansible, Kubernetes</li>
+                <li class="list-group-item">Cloud, OS & Others: AWS, Azure, Windows, Mac OS, Linux, Git, GitHub, GitLab</li>
             </ul>
         </section>
 
         <section id="work-experience">
             <h2 class="mb-4">Work Experience</h2>
+
             <article class="mb-4">
                 <h3>PTC, Boston, MA</h3>
                 <p><strong>Software Quality Assurance Engineer</strong> | Jan 2024 - Present</p>
@@ -60,19 +74,46 @@
                     <li>Designed and implemented RESTful web services using Spring Boot and Node.js, improving data exchange efficiency by 25%.</li>
                 </ul>
             </article>
-            
-            <!-- Add more work experience sections as needed -->
+
+            <article class="mb-4">
+                <h3>Information Technology Solution Center, Cincinnati, OH</h3>
+                <p><strong>Software Application Developer</strong> | Jun 2023 – Dec 2023</p>
+                <ul>
+                    <li>Spearheaded and engineered a robust application using React, NestJS, and PostgreSQL, enabling seamless access to drug testing results across multiple locations, thereby improving operational efficiency by 40% and data accessibility within the medical department for over 10 locations.</li>
+                    <li>Successfully upgraded the application's front-end from AngularJS to the latest React framework, significantly enhancing performance by 50% and elevating user experience, resulting in a 30% increase in user satisfaction due to a more responsive and user-friendly interface.</li>
+                    <li>Worked on critical enhancements and resolved key issues for a certification portal project, ensuring smooth functionality and improving user satisfaction by 20% through meticulous debugging and feature improvements, resulting in a 35% increase in system stability.</li>
+                </ul>
+            </article>
+
+            <article class="mb-4">
+                <h3>DAZN, Hyderabad, IN</h3>
+                <p><strong>Associate Software Engineer</strong> | Oct 2022 - Dec 2022</p>
+                <ul>
+                    <li>Worked closely with a team of 8 developers, utilizing React for building user interfaces, MySQL for database management, Node.js for server-side scripting, and JavaScript for front-end development to ensure accurate content display based on user location, resulting in a 30% increase in development efficiency.</li>
+                    <li>Created and aligned 5 video rails, and implemented dynamic content display that adapts based on the user's geographical location using modern front-end technologies, enhancing relevance and engagement for users and leading to a 25% increase in user interaction.</li>
+                    <li>Coordinated with 3 cross-functional teams to identify and prioritize 10 areas for UX improvement, successfully implementing changes that optimized content delivery and enhanced user satisfaction by 20%.</li>
+                </ul>
+            </article>
+
+            <article class="mb-4">
+                <h3>Magna Infotech, Bengaluru, IN</h3>
+                <p><strong>Software Developer</strong> | Jul 2020 - Sep 2022</p>
+                <ul>
+                    <li>Developed and optimized enterprise-level applications in Java, improving system performance by 30% and reducing response times by 25% through efficient code and algorithm enhancements.</li>
+                    <li>Engineered and deployed full-stack applications using the MERN stack, achieving a 45% improvement in user engagement and a 20% reduction in development time through modular and reusable code components.</li>
+                    <li>Led the migration of legacy systems to Java-based microservices architecture, resulting in a 40% increase in scalability and a 35% reduction in operational costs.</li>
+                </ul>
+            </article>
         </section>
 
         <section id="projects">
             <h2 class="mb-4">Projects</h2>
+
             <article class="mb-4">
                 <h3>Diabetic Retinopathy Detection using Deep Learning</h3>
                 <p>Employed deep learning techniques to detect diabetic retinopathy using APTOS-2019 dataset. Achieved best results using DenseNet121 model.</p>
                 <p><strong>Technologies:</strong> Keras, TensorFlow, Node.js, OpenCV, Matplotlib</p>
             </article>
-            
-            <!-- Add more project sections as needed -->
         </section>
 
         <footer class="text-center mt-5">
@@ -83,6 +124,8 @@
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <!-- Custom JS -->
     <script src="scripts.js"></script>
 </body>
