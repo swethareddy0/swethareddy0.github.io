@@ -1,77 +1,85 @@
-/* Custom styles */
-
+/* Custom Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(45deg, #2196f3, #21cbf3);
+    color: white;
+    padding: 60px 0;
+    transition: background 0.5s ease-in-out;
 }
 
-header.navbar-scrolled {
-    background-color: rgba(0, 123, 255, 0.9);
+header:hover {
+    background: linear-gradient(45deg, #21cbf3, #2196f3);
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
+header h1 {
+    font-size: 3em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.navbar-nav .nav-link {
-    color: #fff;
-    padding: 8px 15px;
-    transition: color 0.3s ease;
+header p a {
+    color: #ffd54f;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #f8f9fa;
+header p a:hover {
+    color: #ffeb3b;
+}
+
+nav a {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
 }
 
 section {
-    margin-bottom: 60px;
-    padding-top: 80px;
+    margin: 60px 0;
+}
+
+section h2 {
+    color: #2196f3;
+    font-size: 2.5em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+section h2:hover {
+    color: #21cbf3;
+    border-color: #21cbf3;
 }
 
 .card {
     border: none;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.list-group-item {
-    background-color: #f8f9fa;
-    border-color: #dee2e6;
+.card:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
 
-article {
-    border-left: 3px solid #007bff;
-    padding-left: 15px;
-    margin-bottom: 30px;
-    transition: border-color 0.3s ease;
+.card-title {
+    color: #3f51b5;
+    font-size: 1.8em;
 }
 
-article:hover {
-    border-left-color: #0056b3;
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    transition: background 0.5s ease-in-out;
 }
 
-/* Add more styling as needed */
-
-@media (max-width: 768px) {
-    header {
-        padding: 5px 0;
-    }
-
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
+footer:hover {
+    background: #444;
 }
