@@ -1,77 +1,25 @@
+To update the existing HTML structure with the provided resume content for Swetha Reddy Vuppala, you would need to replace the content within the `<body>` tags of your HTML. Here's how you can modify it:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swetha Reddy Vupplaa - Software Quality Assurance Engineer</title>
+    <title>Swetha Reddy Vuppala - Software Engineer</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar-nav .nav-link {
-            color: #fff;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #f8f9fa;
-        }
-        section {
-            padding-top: 80px;
-            margin-bottom: 60px;
-        }
-        .card {
-            margin-bottom: 30px;
-        }
-        .card-header {
-            background-color: #007bff;
-            color: #fff;
-        }
-        .card-body {
-            background-color: #f8f9fa;
-        }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        .card-text {
-            margin-bottom: 1rem;
-        }
-        .list-group-item {
-            background-color: #fff;
-            border: none;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
-        <div class="container text-center">
-            <h1>Swetha Reddy Vupplaa</h1>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Swetha Reddy Vuppala</h1>
             <p>Cincinnati, Ohio | +1 (513) 764-5700 | <a href="mailto:swethareddyv48@gmail.com" class="text-white">swethareddyv48@gmail.com</a></p>
             <p>
                 <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i> LinkedIn</a>
@@ -84,14 +32,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#technical-skills">Technical Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Technical Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 </ul>
             </div>
@@ -99,129 +47,94 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="container mt-5">
-        <!-- Education Section -->
+    <main class="container my-5">
         <section id="education">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Education</h2>
-                </div>
+            <h2 class="text-primary mb-4">Education</h2>
+            <div class="card mb-4">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Master of Science in Information Technology</h3>
-                            <p>University of Cincinnati, Cincinnati, OH</p>
-                            <p>GPA: 4.0/4.0</p>
-                            <p>Jan 2023 - Apr 2024</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Bachelor of Engineering in Information Technology</h3>
-                            <p>Vasavi College of Engineering, Hyderabad, IN</p>
-                            <p>GPA: 3.58/4.0</p>
-                            <p>Jul 2018 - Jun 2022</p>
-                        </div>
-                    </div>
+                    <h3 class="card-title">University of Cincinnati, Cincinnati, Ohio, USA</h3>
+                    <p class="card-text">Master of Science in Information Technology (GPA: 4.0/4.0) | Jan 2023 - Apr 2024</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Vasavi College of Engineering, Hyderabad, India</h3>
+                    <p class="card-text">Bachelor of Engineering in Information Technology (GPA: 3.58/4.0) | Jul 2018 - Jun 2022</p>
                 </div>
             </div>
         </section>
 
-        <!-- Technical Skills Section -->
-        <section id="technical-skills">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Technical Skills</h2>
-                </div>
-                <div class="card-body">
-                    <h3>Languages</h3>
+        <section id="skills">
+            <h2 class="text-primary mb-4">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h4">Methodologies</h3>
+                    <p>Agile/Scrum, Waterfall</p>
+                    <h3 class="h4">Languages</h3>
                     <p>Python, Java, C, C++, C#, HTML5, CSS3, JavaScript, TypeScript</p>
-
-                    <h3>Frameworks & Libraries</h3>
+                    <h3 class="h4">Frameworks & Libraries</h3>
                     <p>Spring Boot, Django, Ruby, Angular, React.js, Node.js, Express.js, .NET, Rest API’s</p>
-
-                    <h3>Databases & Servers</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="h4">Databases & Servers</h3>
                     <p>SQL, Oracle, SQL Server, MS-Access, MongoDB, PostgreSQL, Apache Hadoop, Apache Tomcat</p>
-
-                    <h3>Tools & Platforms</h3>
+                    <h3 class="h4">Tools & Platforms</h3>
                     <p>Eclipse IDE, Android Studio, Docker, Tableau, CI/CD, DevOps, Jenkins, Ansible, Kubernetes</p>
-
-                    <h3>Cloud, OS & Others</h3>
+                    <h3 class="h4">Cloud, OS & Others</h3>
                     <p>AWS, Azure, Windows, Mac OS, Linux, Git, GitHub, GitLab</p>
                 </div>
             </div>
         </section>
 
-        <!-- Work Experience Section -->
-        <section id="work-experience">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Work Experience</h2>
-                </div>
+        <section id="experience">
+            <h2 class="text-primary mb-4">Work Experience</h2>
+            <div class="card mb-4">
                 <div class="card-body">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3 class="card-title">Software Quality Assurance Engineer</h3>
-                            <p>PTC, Boston, MA</p>
-                            <p>Jan 2024 - Present</p>
-                            <ul>
-                                <li>Spearheaded the development and optimization of an enterprise-level Java application, enhancing system performance by 40% and reducing response times by 30%.</li>
-                                <li>Led the development of a comprehensive e-commerce web application using the MERN stack, increasing user engagement by 45% and reducing page load times by 35%.</li>
-                                <li>Designed and implemented RESTful web services using Spring Boot and Node.js, improving data exchange efficiency by 25%.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3 class="card-title">Software Application Developer</h3>
-                            <p>Information Technology Solution Center, Cincinnati, OH</p>
-                            <p>Jun 2023 – Dec 2023</p>
-                            <ul>
-                                <li>Spearheaded and engineered a robust application using React, NestJS, and PostgreSQL, enabling seamless access to drug testing results across multiple locations.</li>
-                                <li>Successfully upgraded the application's front-end from AngularJS to React framework, significantly enhancing performance by 50%.</li>
-                                <li>Worked on critical enhancements and resolved key issues for a certification portal project, ensuring smooth functionality and improving user satisfaction.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Add more work experience cards as needed -->
+                    <h3 class="card-title">Full Stack Developer, PTC, Boston, MA</h3>
+                    <p class="card-text">Jan 2024 - Present</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Spearheaded the development and optimization of an enterprise-level Java application, enhancing system performance by 40% and reducing response times by 30% through efficient code refactoring and multi-threading techniques.</li>
+                        <li class="list-group-item">Led the development of a comprehensive e-commerce web application using the MERN stack, increasing user engagement by 45% and reducing page load times by 35% through optimization.</li>
+                        <li class="list-group-item">Designed and implemented RESTful web services using Spring Boot and Node.js, improving data exchange efficiency by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Software Application Developer, Information Technology Solution Center, Cincinnati, OH</h3>
+                    <p class="card-text">Jun 2023 – Dec 2023</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Engineered a robust application using React, NestJS, and PostgreSQL, improving operational efficiency by 40%.</li>
+                        <li class="list-group-item">Upgraded the front-end from AngularJS to React, enhancing performance by 50% and user experience.</li>
+                        <li class="list-group-item">Contributed to critical enhancements and issue resolutions for a certification portal project.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Associate Software Engineer, DAZN, Hyderabad, India</h3>
+                    <p class="card-text">Oct 2022 - Dec 2022</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Developed user interfaces using React, managed databases with MySQL, and implemented dynamic content display.</li>
+                        <li class="list-group-item">Collaborated with cross-functional teams to enhance UX and content delivery.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Software Developer, Magna Infotech, Bengaluru, India</h3>
+                    <p class="card-text">Jul 2020 - Sep 2022</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Optimized enterprise-level applications in Java and developed full-stack applications using the MERN stack.</li>
+                        <li class="list-group-item">Led the migration of legacy systems to Java-based microservices architecture.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects">
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Projects</h2>
-                </div>
+            <h2 class="text-primary mb-4">Projects</h2>
+            <div class="card mb-4">
                 <div class="card-body">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3 class="card-title">Diabetic Retinopathy Detection using Deep Learning</h3>
-                            <p>Employed deep learning techniques to detect diabetic retinopathy using APTOS-2019 dataset.</p>
-                            <p>Technologies: Keras, TensorFlow, Node.js, OpenCV, Matplotlib</p>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h3 class="card-title">E-commerce Website with Recommendation System</h3>
-                            <p>Developed an e-commerce platform with personalized recommendations based on user behavior.</p>
-                            <p>Technologies: MERN Stack (MongoDB, Express.js, React.js, Node.js)</p>
-                        </div>
-                    </div>
-                    <!-- Add more project cards as needed -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Swetha Reddy Vupplaa. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+                    <h3 class="card-title">Diabetic Retinopathy Detection using Deep Learning</h3>
+                    <p class="card-text">Technologies: Keras, TensorFlow, Node.js
