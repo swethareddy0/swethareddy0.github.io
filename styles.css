@@ -1,28 +1,45 @@
 /* Custom styles */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
 }
 
 header {
-    margin-bottom: 40px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
-h1, h2, h3 {
-    color: #007bff; /* Bootstrap primary color */
+header.navbar-scrolled {
+    background-color: rgba(0, 123, 255, 0.9);
 }
 
-.social-icon {
-    color: #007bff;
-    font-size: 24px;
-    margin-right: 10px;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
 }
 
 section {
     margin-bottom: 60px;
+    padding-top: 80px;
 }
 
 .card {
@@ -39,6 +56,22 @@ section {
 article {
     border-left: 3px solid #007bff;
     padding-left: 15px;
+    margin-bottom: 30px;
+    transition: border-color 0.3s ease;
+}
+
+article:hover {
+    border-left-color: #0056b3;
 }
 
 /* Add more styling as needed */
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
