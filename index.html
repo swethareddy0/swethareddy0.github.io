@@ -1,176 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swetha Reddy Vuppala -Full Stack Developer</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-   <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
-</head>
-<body>
+  <head>
+    <title>Swetha Reddy Vuppala Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-9 text-md-start">
-                    <h1>Swetha Reddy Vuppala</h1>
-                    <p>Cincinnati, Ohio | +1 (513) 764-5700 | <a href="mailto:swethareddyv48@gmail.com" class="text-white">swethareddyv48@gmail.com</a></p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/swethareddy-vuppala/" class="text-white me-3"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/swethareddy0" class="text-white"><i class="bi bi-github"></i> GitHub</a>
-                    </p>
-                </div>
-                <div class="col-md-3 text-md-end">
-                    <!-- Profile Image -->
-                    <img src="profile-image.jpg" alt="Profile Image" class="rounded-circle mb-3" style="width: 150px;">
-                </div>
-            </div>
-        </div>
-    </header>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <!-- Hamburger menu button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications & Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Academic Projects</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
 
 
-    <!-- Main Content -->
-    <main class="container my-5">
-        <section id="education">
-            <h2 class="text-primary mb-4">Education</h2>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">University of Cincinnati, Cincinnati, Ohio, USA</h3>
-                    <p class="card-text">Master of Science in Information Technology (GPA: 4.0/4.0) | Jan 2023 - Apr 2024</p>
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Vasavi College of Engineering, Hyderabad, India</h3>
-                    <p class="card-text">Bachelor of Engineering in Information Technology (GPA: 3.58/4.0) | Jul 2018 - Jun 2022</p>
-                </div>
-            </div>
-        </section>
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
 
-        <section id="skills">
-            <h2 class="text-primary mb-4">Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="h4">Methodologies</h3>
-                    <p>Agile/Scrum, Waterfall</p>
-                    <h3 class="h4">Languages</h3>
-                    <p>Python, Java, C, C++, C#, HTML5, CSS3, JavaScript, TypeScript</p>
-                    <h3 class="h4">Frameworks & Libraries</h3>
-                    <p>Spring Boot, Django, Ruby, Angular, React.js, Node.js, Express.js, .NET, Rest API’s</p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="h4">Databases & Servers</h3>
-                    <p>SQL, Oracle, SQL Server, MS-Access, MongoDB, PostgreSQL, Apache Hadoop, Apache Tomcat</p>
-                    <h3 class="h4">Tools & Platforms</h3>
-                    <p>Eclipse IDE, Android Studio, Docker, Tableau, CI/CD, DevOps, Jenkins, Ansible, Kubernetes</p>
-                    <h3 class="h4">Cloud, OS & Others</h3>
-                    <p>AWS, Azure, Windows, Mac OS, Linux, Git, GitHub, GitLab</p>
-                </div>
-            </div>
-        </section>
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
 
-        <section id="experience">
-            <h2 class="text-primary mb-4">Work Experience</h2>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Full Stack Developer, PTC, Boston, MA</h3>
-                    <p class="card-text">Jan 2024 - Present</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Spearheaded the development and optimization of an enterprise-level Java application, enhancing system performance by 40% and reducing response times by 30% through efficient code refactoring and multi-threading techniques.</li>
-                        <li class="list-group-item">Led the development of a comprehensive e-commerce web application using the MERN stack, increasing user engagement by 45% and reducing page load times by 35% through optimization.</li>
-                        <li class="list-group-item">Designed and implemented RESTful web services using Spring Boot and Node.js, improving data exchange efficiency by 25%.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Software Application Developer, Information Technology Solution Center, Cincinnati, OH</h3>
-                    <p class="card-text">Jun 2023 – Dec 2023</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Engineered a robust application using React, NestJS, and PostgreSQL, improving operational efficiency by 40%.</li>
-                        <li class="list-group-item">Upgraded the front-end from AngularJS to React, enhancing performance by 50% and user experience.</li>
-                        <li class="list-group-item">Contributed to critical enhancements and issue resolutions for a certification portal project.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Associate Software Engineer, DAZN, Hyderabad, India</h3>
-                    <p class="card-text">Oct 2022 - Dec 2022</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Developed user interfaces using React, managed databases with MySQL, and implemented dynamic content display.</li>
-                        <li class="list-group-item">Collaborated with cross-functional teams to enhance UX and content delivery.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="card-title">Software Developer, Magna Infotech, Bengaluru, India</h3>
-                    <p class="card-text">Jul 2020 - Sep 2022</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Optimized enterprise-level applications in Java and developed full-stack applications using the MERN stack.</li>
-                        <li class="list-group-item">Led the migration of legacy systems to Java-based microservices architecture.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-       <section id="projects">
-    <h2 class="text-primary mb-4">Projects</h2>
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3 class="card-title">Diabetic Retinopathy Detection using Deep Learning</h3>
-            <p class="card-text">Technologies: Keras, TensorFlow, Node.js</p>
-        </div>
-    </div>
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Swetha Reddy Vuppala</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Swetha Reddy Vuppala</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'YouTuber  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Senior Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/@SwethaReddyOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/swethavuppala" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Swetha Reddy Vuppala</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95
+%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Python</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Data Visualization</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Machine Learning</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Statistical Analysis</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-7">
+						<div class="about-me pt-4 pt-md-0">
+							<div class="title-box-2">
+								<h5 class="title-left">
+									About me
+								</h5>
+							</div>
+							<p class="lead">
+								An enthusiastic and dedicated Senior Data Analyst with over 5 years of experience in interpreting and analyzing data for driving business solutions. Proficient in statistical analysis, data visualization, and machine learning techniques. Strong problem-solving skills and a proven ability to deliver high-quality results in fast-paced environments.
+							</p>
+							<p class="lead">
+								I am passionate about leveraging data-driven insights to make informed business decisions and optimize operational processes. Constantly exploring new technologies and methodologies to enhance analytical capabilities and stay updated with industry trends.
+							</p>
+							<p class="lead">
+								Feel free to reach out to me through the contact section for collaborations or to discuss potential opportunities.
+							</p>
+							<a href="resume/Swetha_Reddy_Vuppala_Resume.pdf" class="btn btn-primary">Download CV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section>
+
+
+	<section class="ftco-section ftco-project" id="project-section">
+		<div class="container-fluid px-4">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Recent Projects</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="project img ftco-animate zoom-effect">
+						<a href="images/project-1.jpg" class="popup-img">
+							<img src="images/project-1.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="overlay"></div>
+						</a>
+						<div class="text py-4">
+							<h3><a href="#">Project Title</a></h3>
+							<span>Category</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img ftco-animate zoom-effect">
+						<a href="images/project-2.jpg" class="popup-img">
+							<img src="images/project-2.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="overlay"></div>
+						</a>
+						<div class="text py-4">
+							<h3><a href="#">Project Title</a></h3>
+							<span>Category</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img ftco-animate zoom-effect">
+						<a href="images/project-3.jpg" class="popup-img">
+							<img src="images/project-3.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="overlay"></div>
+						</a>
+						<div class="text py-4">
+							<h3><a href="#">Project Title</a></h3>
+							<span>Category</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img ftco-animate zoom-effect">
+						<a href="images/project-4.jpg" class="popup-img">
+							<img src="images/project-4.jpg" class="img-fluid" alt="Colorlib Template">
+							<div class="overlay"></div>
+						</a>
+						<div class="text py-4">
+							<h3><a href="#">Project Title</a></h3>
+							<span>Category</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb ftco-no-pt" id="resume-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<h2>Education</h2>
+						<div class="resume-item">
+							<h3>Master of Science, Computer Science</h3>
+							<p class="lead">XYZ University, Bengaluru, India</p>
+							<p>Graduated: June 2015</p>
+						</div>
+						<div class="resume-item">
+							<h3>Bachelor of Science, Information Technology</h3>
+							<p class="lead">ABC College, Hyderabad, India</p>
+							<p>Graduated: June 2013</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<h2>Experience</h2>
+						<div class="resume-item">
+							<h3>Senior Data Analyst</h3>
+							<p class="lead">Tech Solutions Inc., Bengaluru, India</p>
+							<p class="subheading">June 2018 - Present</p>
+							<p>Lead a team of analysts in performing data analysis and interpretation to drive business decisions. Implemented machine learning models for predictive analytics and developed dashboards for data visualization.</p>
+						</div>
+						<div class="resume-item">
+							<h3>Data Analyst</h3>
+							<p class="lead">Data Experts Pvt. Ltd., Hyderabad, India</p>
+							<p class="subheading">July 2015 - June 2018</p>
+							<p>Analyzed complex data sets using statistical methods and tools. Prepared detailed reports and presented findings to stakeholders, contributing to strategic planning and operational improvements.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+				</div>
+			</div>
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Bengaluru, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://1234567920">+91 1234567890</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex
+						align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+					<p><a href="mailto:swetha@example.com">swetha@example.com</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4">Website</h3>
+					<p><a href="#">www.swethareddy.com</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters block-9">
+			<div class="col-md-6 order-md-last d-flex">
+				<form action="#" class="bg-light p-4 p-md-5 contact-form">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Your Name">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Your Email">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Subject">
+					</div>
+					<div class="form-group">
+						<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6 d-flex">
+				<div id="map" class="bg-white"></div>
+			</div>
+		</div>
+	</div>
 </section>
 
-  <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>© 2024 Swetha Reddy Vuppala. All Rights Reserved.</p>
-    </footer>
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-md">
+				<div class="ftco-footer-widget mb-4">
+					<h2 class="ftco-heading-2">Swetha Reddy Vuppala</h2>
+					<p>An enthusiastic Senior Data Analyst passionate about leveraging data-driven insights to drive business solutions.</p>
+					<ul class="ftco-footer-social list-unstyled mt-2">
+						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-    <script src="/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2r81x0on3EFclLwIDPvGnD00sZpq4ks7x" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#nav_menu').slicknav({
-                prependTo: '.navbar-collapse',
-                label: ''
-            });
-        });
-    </script>
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-
-</body>
-</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
